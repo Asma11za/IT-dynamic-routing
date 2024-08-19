@@ -1,7 +1,7 @@
 <h1> Design and configure dynamic routing (RIP and OSPF) for non-profit educational organization </h1>
 
 <h2> Network Topology: </h2>
-<img src="https://github.com/user-attachments/assets/aa9b7691-837b-4f6c-b13c-61e3d0fe89a9"  width="800">
+<img src="https://github.com/user-attachments/assets/aa9b7691-837b-4f6c-b13c-61e3d0fe89a9"  width="900">
 
 <h2> Methadology: </h2>
 
