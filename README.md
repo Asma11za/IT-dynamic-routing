@@ -1,4 +1,5 @@
-<h1> Design and configure dynamic routing (RIP and OSPF) for non-profit educational organization </h1>
+<h1> Design and configure dynamic routing (RIP and OSPF) </h1>
+This project aims to design and configure a network for a nonprofit educational organization that contains three interactive halls offering all the essential tools a student can use from PCs to Printers and Laptops.
 
 <h2> Network Topology: </h2>
 <img src="https://github.com/user-attachments/assets/aa9b7691-837b-4f6c-b13c-61e3d0fe89a9"  width="900">
