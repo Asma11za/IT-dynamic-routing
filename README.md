@@ -16,6 +16,7 @@ Calculation of packet loss = (Packet data send - Packet data revived / Packet da
 
 - Cisco Packet Tracer.
 
+
 <h2> Addressing Table: </h2>
 
 | **Device**       | **Interface**    | **IP address**    | **Subnet Mask**   | **Default Gateway** |
@@ -318,12 +319,13 @@ Router(config-router)# network 195.168.4.1 0.0.0.255 area 0
 
 <h3> CPU utilization: </h3>
 
-<img width="841" alt="Screen Shot 2024-08-19 at 8 22 39 AM" src="https://github.com/user-attachments/assets/12ea07cf-255b-4a72-adcf-5eae3f8b93dd">
+<img width="600" alt="Screen Shot 2024-08-19 at 8 22 39 AM" src="https://github.com/user-attachments/assets/12ea07cf-255b-4a72-adcf-5eae3f8b93dd">
 
 - In the RIP protocol was the CPU utilization about 79%, and in the OSPF protocol was 42%.
   
 <h3> Memory Usage: </h3>
-<img width="841" alt="Screen Shot 2024-08-19 at 8 23 12 AM" src="https://github.com/user-attachments/assets/73674ca3-f1d0-4325-ba50-f589bb5c6f4c">
+
+<img width="600" alt="Screen Shot 2024-08-19 at 8 27 07 AM" src="https://github.com/user-attachments/assets/21d5aa15-8b53-462d-96a7-ebd242371b74">
 
 - In the RIP protocol, the memory usage was 88%. In the OSPF protocol, the memory usage was 83%.
 
