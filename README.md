@@ -179,29 +179,52 @@ Router(config-router)#exit
 
 <h2> Configuration Routing OSPF</h2>
 
-Router(config)#router ospf 1
-Router(config-router)#network 192.168.1.1 0.0.0.255 area 0
-Router(config-router)#network 13.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 10.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 11.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 14.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 13.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 12.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 192.168.2.1 0.0.0.255 area 0
-Router(config-router)#network 192.168.3.1 0.0.0.255 area 0
-Router(config-router)#network 15.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 17.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 19.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 16.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 194.168.1.1 0.0.0.255 area 0
-Router(config-router)#network 18.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 17.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 19.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 20.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 21.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 23.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 195.168.1.1 0.0.0.255 area 0
-Router(config-router)#network 22.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 195.168.4.1 0.0.0.255 area 0
+Router(config)# router ospf 1
+
+Router(config-router)# network 192.168.1.1 0.0.0.255 area 0
+
+Router(config-router)# network 13.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 10.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 11.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 14.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 13.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 12.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 192.168.2.1 0.0.0.255 area 0
+
+Router(config-router)# network 192.168.3.1 0.0.0.255 area 0
+
+Router(config-router)# network 15.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 17.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 19.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 16.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 194.168.1.1 0.0.0.255 area 0
+
+Router(config-router)# network 18.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 17.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 19.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 20.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 21.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 23.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 195.168.1.1 0.0.0.255 area 0
+
+Router(config-router)# network 22.0.0.0 0.255.255.255 area 0
+
+Router(config-router)# network 195.168.4.1 0.0.0.255 area 0
 
 
