@@ -86,7 +86,7 @@ Calculation of packet loss = (Packet data send - Packet data revived / Packet da
 
 <h2> Routers configuration: </h2>
 
-<h3> R1 </h3>
+<h3> 1. R1 </h3>
 R1# configure terminal
 
 Enter configuration commands, one per line. End with CNTL/Z.
@@ -107,7 +107,7 @@ R1(config-if)# no shutdown
 
 R1(config-if)# exit
 
-<h3> R2 </h3>
+<h3> 2. R2 </h3>
 R2# configure terminal
 
 Enter configuration commands, one per line. End with CNTL/Z.
@@ -128,7 +128,7 @@ R2(config-if)# no shutdown
 
 R2(config-if)# exit
 
-<h3> R3 </h3>
+<h3> 3. R3 </h3>
 R3# configure terminal
 
 Enter configuration commands, one per line. End with CNTL/Z.
@@ -149,7 +149,7 @@ R3(config-if)# no shutdown
 
 R3(config-if)# exit
 
-<h3> R4 </h3>
+<h3> 4. R4 </h3>
 R4# configure terminal
 
 Enter configuration commands, one per line. End with CNTL/Z.
@@ -171,6 +171,7 @@ R4(config-if)# no shutdown
 R4(config-if)# exit
 
 <h2> Configuration Routing RIP </h2>
+<br>
 (*Note): This configuration has been done inside all 12 routers to enable the RIP protocol
 
 Router(config)# router rip
@@ -287,4 +288,29 @@ Router(config-router)# network 22.0.0.0 0.255.255.255 area 0
 
 Router(config-router)# network 195.168.4.1 0.0.0.255 area 0
 
+<h2> Result: </h2>
+<h3> 1. Packet loss of RIP: </h3>
 
+| Packet loss % | received | sent | Receiver | sender   | No. |
+| ------------- | -------- | ---- | -------- | -------- | --- |
+| 25%           | 3        | 4    | PC - D   | PC - A   | 1   |
+| 25%           | 3        | 4    | PC - E   | Laptop-D | 2   |
+| 0%            | 4        | 4    | PC - B   | PC - A   | 3   |
+| 25%           | 3        | 4    | PC - L   | PC - C   | 4   |
+| 0%            | 4        | 4    | PC - D   | PC- E    | 5   |
+| 0%            | 4        | 4    | PC - H   | PC- L    | 6   |
+
+24 packets were sent from one device to another. 21 packets were received which means 3 packets were lost.
+
+<h3> 2. Packet loss of OSPF: </h3>
+
+| Packet loss % | received | sent | Receiver | sender   | No. |
+| ------------- | -------- | ---- | -------- | -------- | --- |
+| 0%            | 4        | 4    | Laptop-B | PC-A     | 1   |
+| 0%            | 4        | 4    | PC- D    | Laptop-C | 2   |
+| 0%            | 4        | 4    | PC-K     | PC-L     | 3   |
+| 0%            | 4        | 4    | Laptop-C | PC-H     | 4   |
+| 0%            | 4        | 4    | Laptop-C | PC-K     | 5   |
+| 25%           | 3        | 4    | Laptop-E | PC-L     | 6   |
+
+ 24 packets are sent from one device to another. The packet range percentage was between 0 – 25%. The total of the received packets is 23 packets. 
