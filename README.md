@@ -1,4 +1,4 @@
-<h1> Design and configure dynamic routing (RIP and OSPF) </h1>
+<h1> Interactive Halls: Design and configure dynamic routing (RIP and OSPF) </h1>
 This project aims to design and configure a network for a nonprofit educational organization that contains three interactive halls offering all the essential tools a student can use from PCs to Printers and Laptops.
 
 <h2> Network Topology: </h2>
